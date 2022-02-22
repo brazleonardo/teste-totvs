@@ -7,6 +7,8 @@ A minha ideia foi criar uma carrinho de compras.
 
 **URL para acessar o site** https://brazleonardo.github.io/teste-totvs
 
+**Os componentes utilizados** 
+
 * Navbar
 ```cmd
 <app-navbar><app-navbar>
