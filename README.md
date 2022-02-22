@@ -34,7 +34,11 @@ A minha ideia foi criar um carrinho de compras.
 <app-main></app-main>
 ```
 
-**Comando para rodar o site em localhost** php -S 0.0.0.0:8080
+**Comando para rodar o site em localhost** 
+
+```cmd
+php -S 0.0.0.0:8080
+```
 
 **URL para acessar localhost** http://localhost:8080
 
