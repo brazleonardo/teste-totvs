@@ -55,7 +55,7 @@ class Cart extends HTMLElement {
           <path fill="#999" d="M11 6c0 0.552-0.448 1-1 1s-1-0.448-1-1c0-0.552 0.448-1 1-1s1 0.448 1 1z"></path>
           <path fill="#999" d="M11.3 12.3c-0.7-1.1-2-1.8-3.3-1.8s-2.6 0.7-3.3 1.8l-0.8-0.6c0.9-1.4 2.4-2.2 4.1-2.2s3.2 0.8 4.1 2.2l-0.8 0.6z"></path>
         </svg>
-        <h3>SEU CARRINHO ESTÁ VAZIA :(</h3>
+        <h3>SEU CARRINHO ESTÁ VAZIO :(</h3>
       </div>
     `;
   }
