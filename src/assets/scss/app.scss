@@ -1,3 +1,13 @@
-body {
-  background-color: #000;
-}
+//Customização
+@import "partials/variaveis";
+@import "partials/icons";
+@import "partials/fonts";
+@import "partials/navbar";
+@import "partials/banner";
+@import "partials/container";
+@import "partials/product";
+@import "partials/cart";
+@import "partials/global";
+
+//Páginas
+@import "partials/home";

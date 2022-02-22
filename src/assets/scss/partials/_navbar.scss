@@ -1,0 +1,182 @@
+.totvs__navbar {
+    width: 100%;
+    height: 60px;
+    background-color: var(--color-navbar);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+
+    img {
+        width: auto;
+        height: 40px;
+    }
+
+    .totvs__menu {
+        height: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            max-width: 350px;
+            height: 100%;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background-color: var(--bg-color);
+            position: fixed;
+            top: 0px;
+            right: 0;
+            bottom: 0;
+            z-index: 500;
+            transition: all 0.3s ease-in-out;
+            transform: translateX(180%);
+            opacity: 0;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        li {
+            height: 100%;
+            margin: 0 2rem;
+            transition: all 0.3s ease-in-out;
+
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+                height: auto;
+                margin: 0.5rem 0;
+                border-bottom: 1px solid #ccc;
+            }
+
+            a {
+                height: 100%;
+                color: var(--color-navbar-text);
+                font-size: 0.8rem;
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 1.5px;
+                display: flex;
+                align-items: center;
+
+                @media only screen and (max-width: 768px) {
+                    height: auto;
+                    color: var(--color-navbar-text-mobile);
+                    padding: 0 2rem 1rem;
+                }
+
+                .icon {
+                    font-size: 1.2rem;
+                    margin-right: 0.9rem;
+                }
+            }
+
+            &.totvs__menu--close {
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 0;
+                left: -20px;
+                background-color: var(--color-navbar-text);
+                border-radius: 50%;
+                margin: 0;
+                padding: 0;
+                display: none;
+
+                @media only screen and (max-width: 768px) {
+                    display: block;
+                }
+
+                button {
+                    width: 30px;
+                    height: 30px;
+                    background: transparent;
+                    border: 0;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 2rem;
+                    color: var(--color-product-border);
+                    padding: 0;
+                }
+            }
+        }
+
+        &:hover {
+            li {
+                opacity: 0.4;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .totvs__open--menu-mobile {
+        width: 30px;
+        height: 20px;
+        background: transparent;
+        border: 0;
+        position: relative;
+        cursor: pointer;
+        display: none;
+
+        @media only screen and (max-width: 768px) {
+            display: block;
+        }
+
+        span {
+            top: 0;
+
+            &,
+            &:before,
+            &:after {
+                width: 100%;
+                height: 2px;
+                content: "";
+                background-color: var(--color-navbar-text);
+                position: absolute;
+                left: 0;
+                transition: all 0.3s ease-in-out;
+            }
+
+            &:before {
+                top: 8px;
+            }
+
+            &:after {
+                top: 16px;
+            }
+        }
+    }
+
+    &.totvs__show--menu {
+        .totvs__menu {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        &:before {
+            width: 100%;
+            height: 100%;
+            content: "";
+            background-image: linear-gradient(45deg, rgba(36, 161, 219, 0.5), rgba(141, 14, 214, 0.5) 100%);
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+    }
+}
