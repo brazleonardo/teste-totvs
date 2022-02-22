@@ -1,7 +1,7 @@
 # TESTE TOTVS
 
 Informações sobre o site:
-Fiz uma tela home com 5 componentes e utilizei o webpack para empacotar os dados javascript e complilar o SCSS para CSS.
+Fiz uma tela home com 5 componentes e utilizei o webpack para empacotar os dados javascript e compilar o SCSS para CSS.
 
 A minha ideia foi criar um carrinho de compras.
 
