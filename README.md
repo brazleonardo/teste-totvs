@@ -33,7 +33,7 @@ A minha ideia foi criar uma carrinho de compras.
 
 **URL para acessar localhost** http://localhost:8080
 
-## Instando dependêcias do site 
+## Instando dependências do site 
 
 Para instalar as pedendência do site será necessário ter o node instalado na sua máquina.
 
