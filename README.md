@@ -5,6 +5,8 @@ Fiz uma tela home com 5 componetes e utilizei webpack para empacotar os dados ja
 
 A minha ideia foi criar uma carrinho de compras.
 
+**URL para acessar o site** https://brazleonardo.github.io/teste-totvs
+
 * Navbar
 ```cmd
 <app-navbar><app-navbar>
@@ -27,7 +29,7 @@ A minha ideia foi criar uma carrinho de compras.
 
 **Comando para rodar o site em localhost** php -S 0.0.0.0:8080
 
-**URL para acessar o site** http://localhost:8080
+**URL para acessar localhost** http://localhost:8080
 
 ## Instando dependêcias do site 
 
