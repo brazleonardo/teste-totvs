@@ -52,7 +52,7 @@ Para instalar as pedendência do site será necessário ter o node instalado na 
 yarn
 ```
 
-Após as intalações das dependência você pode compilar os arquivos SCSS e JS
+Após as instalações das dependência você pode compilar os arquivos SCSS e JS
 
 **/Com o terminal aberto rode o seguinte comando/**
 
