@@ -1,7 +1,9 @@
 # TESTE TOTVS
 
 Informações sobre o site:
-Fiz uma tela home com 5 componetes e utilizei webpack para empacotar os dados javascript e complilar o scss para css
+Fiz uma tela home com 5 componetes e utilizei webpack para empacotar os dados javascript e complilar o SCSS para CSS.
+
+A minha ideia foi criar uma carrinho de compras.
 
 * Navbar
 ```cmd
@@ -37,7 +39,7 @@ Para instalar as pedendência do site será necessário ter o node instalado na 
 yarn
 ```
 
-Após as intalações das dependência você pode compliar os arquivos SCSS e JS
+Após as intalações das dependência você pode compilar os arquivos SCSS e JS
 
 **/Com o terminal aberto rode o seguinte comando/**
 
