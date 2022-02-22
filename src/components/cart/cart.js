@@ -1,37 +1,41 @@
 const data = [
   {
     id: 1,
-    image: "/dist/images/agro.png",
+    image: "https://brazleonardo.github.io/teste-totvs/dist/images/agro.png",
     title: "Agro",
     price: "R$ 59,00",
   },
   {
     id: 2,
-    image: "/dist/images/construcao.png",
+    image:
+      "https://brazleonardo.github.io/teste-totvs/dist/images/construcao.png",
     title: "Construção",
     price: "R$ 69,00",
   },
   {
     id: 3,
-    image: "/dist/images/educacional.png",
+    image:
+      "https://brazleonardo.github.io/teste-totvs/dist/images/educacional.png",
     title: "Educacional",
     price: "R$ 79,00",
   },
   {
     id: 4,
-    image: "/dist/images/logistica.png",
+    image:
+      "https://brazleonardo.github.io/teste-totvs/dist/images/logistica.png",
     title: "Logística",
     price: "R$ 89,00",
   },
   {
     id: 5,
-    image: "/dist/images/manufatura.png",
+    image:
+      "https://brazleonardo.github.io/teste-totvs/dist/images/manufatura.png",
     title: "Manufatura",
     price: "R$ 95,90",
   },
   {
     id: 6,
-    image: "/dist/images/saude.png",
+    image: "https://brazleonardo.github.io/teste-totvs/dist/images/saude.png",
     title: "Saúde",
     price: "R$ 99,00",
   },
@@ -56,10 +60,13 @@ class Cart extends HTMLElement {
     `;
   }
 
-  getData(){
-    const itemCart = localStorage.getItem("@totvs__cart") !== null ? JSON.parse(localStorage.getItem("@totvs__cart")) : [];
+  getData() {
+    const itemCart =
+      localStorage.getItem("@totvs__cart") !== null
+        ? JSON.parse(localStorage.getItem("@totvs__cart"))
+        : [];
 
-    if(itemCart.length > 0) {
+    if (itemCart.length > 0) {
       const template = (item) =>
         `<div class="totvs__cart--item">
           <div class="totvs__cart--group">
@@ -77,7 +84,7 @@ class Cart extends HTMLElement {
       let result = "";
 
       itemCart?.map((item) => {
-        result += template(data?.find(d => d.id === item));
+        result += template(data?.find((d) => d.id === item));
       });
 
       return result;
@@ -88,20 +95,20 @@ class Cart extends HTMLElement {
 
   handleRemoveItemCart(event, id) {
     event.preventDefault();
-    
+
     const itemCart = JSON.parse(localStorage.getItem("@totvs__cart"));
-    const removeItemCart = itemCart.filter(item => item !== id);
+    const removeItemCart = itemCart.filter((item) => item !== id);
 
     localStorage.setItem("@totvs__cart", JSON.stringify(removeItemCart));
-    
+
     event.target.closest(".totvs__cart--item").remove();
 
-    if(itemCart.length === 1) {
+    if (itemCart.length === 1) {
       document.querySelector(".totvs__cart--body").innerHTML = this.cartEmpty();
     }
   }
 
-  handleClose(event){
+  handleClose(event) {
     event.preventDefault();
     document.querySelector(".totvs__mask--cart").remove();
     document.body.classList.remove("totvs__show--cart");
@@ -109,9 +116,12 @@ class Cart extends HTMLElement {
 
   connectedCallback() {
     this.render();
-    this.querySelector(".totvs__cart--close").onClick = () => this.handleClose(event);
+    this.querySelector(".totvs__cart--close").onClick = () =>
+      this.handleClose(event);
 
-    const elem = this.querySelectorAll(".totvs__cart--item .totvs__cart--remove");
+    const elem = this.querySelectorAll(
+      ".totvs__cart--item .totvs__cart--remove"
+    );
     for (item of elem) {
       item.onClick = (id) => this.handleRemoveItemCart(event, id);
     }

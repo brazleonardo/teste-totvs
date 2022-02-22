@@ -55,7 +55,7 @@ class Navbar extends HTMLElement {
   render() {
     this.innerHTML = `
       <nav class="totvs__navbar">
-          <img src="/dist/images/logo.png" alt="Totvs" />
+          <img src="https://brazleonardo.github.io/teste-totvs/dist/images/logo.png" alt="Totvs" />
           <ul class="totvs__menu">
               <li><a href="#" onclick="onClick(1)"><span class="icon icon-home3"></span> Home</a></li>
               <li><a href="#" onclick="onClick(2)"><span class="icon icon-cart"></span> Carrinho</a></li>

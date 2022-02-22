@@ -1,37 +1,41 @@
 const data = [
   {
     id: 1,
-    image: "/dist/images/agro.png",
+    image: "https://brazleonardo.github.io/teste-totvs/dist/images/agro.png",
     title: "Agro",
     price: "R$ 59,00",
   },
   {
     id: 2,
-    image: "/dist/images/construcao.png",
+    image:
+      "https://brazleonardo.github.io/teste-totvs/dist/images/construcao.png",
     title: "Construção",
     price: "R$ 69,00",
   },
   {
     id: 3,
-    image: "/dist/images/educacional.png",
+    image:
+      "https://brazleonardo.github.io/teste-totvs/dist/images/educacional.png",
     title: "Educacional",
     price: "R$ 79,00",
   },
   {
     id: 4,
-    image: "/dist/images/logistica.png",
+    image:
+      "https://brazleonardo.github.io/teste-totvs/dist/images/logistica.png",
     title: "Logística",
     price: "R$ 89,00",
   },
   {
     id: 5,
-    image: "/dist/images/manufatura.png",
+    image:
+      "https://brazleonardo.github.io/teste-totvs/dist/images/manufatura.png",
     title: "Manufatura",
     price: "R$ 95,90",
   },
   {
     id: 6,
-    image: "/dist/images/saude.png",
+    image: "https://brazleonardo.github.io/teste-totvs/dist/images/saude.png",
     title: "Saúde",
     price: "R$ 99,00",
   },
