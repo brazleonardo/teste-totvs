@@ -1,7 +1,7 @@
 # TESTE TOTVS
 
 Informações sobre o site:
-Fiz o uma tela home com 5 componetes
+Fiz uma tela home com 5 componetes e utilizei webpack para empacotar os dados javascript e complilar o scss para css
 
 * Navbar
 ```cmd
@@ -29,7 +29,7 @@ Fiz o uma tela home com 5 componetes
 
 ## Instando dependêcias do site 
 
-Para instalar as pedendência do site será necessário o node instaldo na sua máquina.
+Para instalar as pedendência do site será necessário ter o node instalado na sua máquina.
 
 **Com o terminal aberto rode o seguinte comando**
 
