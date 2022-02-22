@@ -29,11 +29,16 @@ A minha ideia foi criar uma carrinho de compras.
 <app-cart></app-cart>
 ```
 
+* Main
+```cmd
+<app-main></app-main>
+```
+
 **Comando para rodar o site em localhost** php -S 0.0.0.0:8080
 
 **URL para acessar localhost** http://localhost:8080
 
-## Instando dependências do site 
+## Instalando as dependências do site 
 
 Para instalar as pedendência do site será necessário ter o node instalado na sua máquina.
 
